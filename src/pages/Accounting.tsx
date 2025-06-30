@@ -14,13 +14,22 @@ import {
   BarChart3,
   FileText,
   Calendar,
-  ArrowLeft
+  ArrowLeft,
+  CreditCard,
+  Bell,
+  Settings,
+  BookOpen
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import ExpenseTracker from '../components/accounting/ExpenseTracker';
 import IncomeTracker from '../components/accounting/IncomeTracker';
 import FinancialOverview from '../components/accounting/FinancialOverview';
 import BudgetPlanner from '../components/accounting/BudgetPlanner';
+import LoanManagement from '../components/accounting/LoanManagement';
+import ReportsAnalytics from '../components/accounting/ReportsAnalytics';
+import UnifiedLedger from '../components/accounting/UnifiedLedger';
+import ReminderSystem from '../components/accounting/ReminderSystem';
+import AccountingSettings from '../components/accounting/AccountingSettings';
 
 const Accounting = () => {
   const navigate = useNavigate();
@@ -88,7 +97,7 @@ const Accounting = () => {
             </Button>
             <div>
               <h1 className="text-3xl font-bold text-gray-900">Farm Accounting</h1>
-              <p className="text-gray-600">Manage your farm finances and track profitability</p>
+              <p className="text-gray-600">Complete financial management system for your farm</p>
             </div>
           </div>
           <div className="flex space-x-2">
@@ -131,7 +140,7 @@ const Accounting = () => {
 
         {/* Main Content */}
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-9">
             <TabsTrigger value="overview" className="flex items-center space-x-2">
               <BarChart3 className="h-4 w-4" />
               <span>Overview</span>
@@ -144,9 +153,29 @@ const Accounting = () => {
               <Receipt className="h-4 w-4" />
               <span>Expenses</span>
             </TabsTrigger>
+            <TabsTrigger value="loans" className="flex items-center space-x-2">
+              <CreditCard className="h-4 w-4" />
+              <span>Loans</span>
+            </TabsTrigger>
             <TabsTrigger value="budget" className="flex items-center space-x-2">
               <Calculator className="h-4 w-4" />
               <span>Budget</span>
+            </TabsTrigger>
+            <TabsTrigger value="reports" className="flex items-center space-x-2">
+              <FileText className="h-4 w-4" />
+              <span>Reports</span>
+            </TabsTrigger>
+            <TabsTrigger value="ledger" className="flex items-center space-x-2">
+              <BookOpen className="h-4 w-4" />
+              <span>Ledger</span>
+            </TabsTrigger>
+            <TabsTrigger value="reminders" className="flex items-center space-x-2">
+              <Bell className="h-4 w-4" />
+              <span>Reminders</span>
+            </TabsTrigger>
+            <TabsTrigger value="settings" className="flex items-center space-x-2">
+              <Settings className="h-4 w-4" />
+              <span>Settings</span>
             </TabsTrigger>
           </TabsList>
 
@@ -162,8 +191,28 @@ const Accounting = () => {
             <ExpenseTracker />
           </TabsContent>
 
+          <TabsContent value="loans">
+            <LoanManagement />
+          </TabsContent>
+
           <TabsContent value="budget">
             <BudgetPlanner />
+          </TabsContent>
+
+          <TabsContent value="reports">
+            <ReportsAnalytics />
+          </TabsContent>
+
+          <TabsContent value="ledger">
+            <UnifiedLedger />
+          </TabsContent>
+
+          <TabsContent value="reminders">
+            <ReminderSystem />
+          </TabsContent>
+
+          <TabsContent value="settings">
+            <AccountingSettings />
           </TabsContent>
         </Tabs>
       </div>

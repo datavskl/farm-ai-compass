@@ -33,10 +33,10 @@ const Accounting = () => {
     netProfit: 37500,
     monthlyGrowth: 12.5,
     recentTransactions: [
-      { id: 1, type: 'income', description: 'Wheat Sale', amount: 15000, date: '2024-01-15', category: 'Crop Sales' },
-      { id: 2, type: 'expense', description: 'Fertilizer Purchase', amount: 8500, date: '2024-01-14', category: 'Fertilizers' },
-      { id: 3, type: 'income', description: 'Rice Sale', amount: 22000, date: '2024-01-12', category: 'Crop Sales' },
-      { id: 4, type: 'expense', description: 'Tractor Maintenance', amount: 4500, date: '2024-01-10', category: 'Equipment' },
+      { id: 1, type: 'income' as const, description: 'Wheat Sale', amount: 15000, date: '2024-01-15', category: 'Crop Sales' },
+      { id: 2, type: 'expense' as const, description: 'Fertilizer Purchase', amount: 8500, date: '2024-01-14', category: 'Fertilizers' },
+      { id: 3, type: 'income' as const, description: 'Rice Sale', amount: 22000, date: '2024-01-12', category: 'Crop Sales' },
+      { id: 4, type: 'expense' as const, description: 'Tractor Maintenance', amount: 4500, date: '2024-01-10', category: 'Equipment' },
     ]
   };
 

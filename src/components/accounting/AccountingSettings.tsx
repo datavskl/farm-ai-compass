@@ -135,6 +135,11 @@ const AccountingSettings = () => {
     });
   };
 
+  const handleFileInputClick = () => {
+    const fileInput = document.querySelector('input[type="file"]') as HTMLInputElement;
+    fileInput?.click();
+  };
+
   return (
     <div className="space-y-6">
       {/* Success Alert */}
@@ -393,18 +398,19 @@ const AccountingSettings = () => {
 
             <div className="space-y-2">
               <Label>Import Settings</Label>
-              <label className="w-full">
+              <div>
                 <input
                   type="file"
                   accept=".json"
                   onChange={handleImportSettings}
                   className="hidden"
+                  id="settings-file-input"
                 />
-                <Button variant="outline" className="w-full" onClick={() => document.querySelector('input[type="file"]')?.click()}>
+                <Button variant="outline" className="w-full" onClick={handleFileInputClick}>
                   <Upload className="h-4 w-4 mr-2" />
                   Import Settings
                 </Button>
-              </label>
+              </div>
             </div>
           </div>
         </CardContent>

@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Sprout, Cloud, Camera, TrendingUp, Users, Leaf } from 'lucide-react';
+import { Sprout, Cloud, Camera, TrendingUp, Users, Leaf, Calculator } from 'lucide-react';
 
 const Index = () => {
   const navigate = useNavigate();
@@ -12,31 +12,43 @@ const Index = () => {
       icon: Cloud,
       title: "Weather Intelligence",
       description: "AI-powered weather predictions and farming recommendations",
-      color: "bg-blue-500"
+      color: "bg-blue-500",
+      route: "/weather"
     },
     {
       icon: Camera,
       title: "Soil Health Scanner",
       description: "Computer vision analysis of soil conditions and health",
-      color: "bg-green-500"
+      color: "bg-green-500",
+      route: "/soil-analysis"
     },
     {
       icon: Leaf,
       title: "Disease Detection",
       description: "Advanced crop disease identification and treatment advice",
-      color: "bg-emerald-500"
+      color: "bg-emerald-500",
+      route: "/disease-scanner"
+    },
+    {
+      icon: Calculator,
+      title: "Farm Accounting",
+      description: "Complete financial management for income, expenses, and profitability",
+      color: "bg-indigo-500",
+      route: "/accounting"
     },
     {
       icon: TrendingUp,
       title: "Market Analytics",
       description: "Real-time price predictions and market intelligence",
-      color: "bg-orange-500"
+      color: "bg-orange-500",
+      route: "/market"
     },
     {
       icon: Users,
       title: "Expert Consultation",
       description: "Connect with agricultural experts and community",
-      color: "bg-purple-500"
+      color: "bg-purple-500",
+      route: "/consultation"
     }
   ];
 
@@ -95,7 +107,11 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm">
+              <Card 
+                key={index} 
+                className="group hover:shadow-lg transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm cursor-pointer"
+                onClick={() => navigate(feature.route)}
+              >
                 <CardHeader className="text-center">
                   <div className={`${feature.color} p-3 rounded-full w-fit mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <feature.icon className="h-6 w-6 text-white" />

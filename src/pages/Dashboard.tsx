@@ -13,7 +13,8 @@ import {
   TrendingUp, 
   Calendar,
   Bell,
-  Activity
+  Activity,
+  Camera
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 

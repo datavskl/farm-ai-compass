@@ -8,7 +8,8 @@ import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Weather from "./pages/Weather";
-import SoilAnalysis from "./pages/SoilAnalysis";
+import PlantDiseaseDetection from "./pages/PlantDiseaseDetection";
+import SoilHealthForm from "./pages/SoilHealthForm";
 import Accounting from "./pages/Accounting";
 import NotFound from "./pages/NotFound";
 
@@ -25,7 +26,8 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/weather" element={<Weather />} />
-          <Route path="/soil-analysis" element={<SoilAnalysis />} />
+          <Route path="/disease-detection" element={<PlantDiseaseDetection />} />
+          <Route path="/soil-health" element={<SoilHealthForm />} />
           <Route path="/accounting" element={<Accounting />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

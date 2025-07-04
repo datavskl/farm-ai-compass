@@ -17,17 +17,17 @@ const Index = () => {
     },
     {
       icon: Camera,
-      title: "Soil Health Scanner",
-      description: "Computer vision analysis of soil conditions and health",
+      title: "Soil Health Assessment",
+      description: "Comprehensive soil analysis and health recommendations",
       color: "bg-green-500",
-      route: "/soil-analysis"
+      route: "/soil-health"
     },
     {
       icon: Leaf,
-      title: "Disease Detection",
-      description: "Advanced crop disease identification and treatment advice",
+      title: "Plant Disease Detection",
+      description: "AI-powered crop disease identification and treatment advice",
       color: "bg-emerald-500",
-      route: "/disease-scanner"
+      route: "/disease-detection"
     },
     {
       icon: Calculator,

@@ -20,7 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
+				sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -48,6 +48,9 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+				success: { DEFAULT: 'hsl(var(--success))', foreground: 'hsl(0 0% 100%)' },
+				warning: { DEFAULT: 'hsl(var(--warning))', foreground: 'hsl(30 60% 15%)' },
+				info:    { DEFAULT: 'hsl(var(--info))',    foreground: 'hsl(0 0% 100%)' },
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
@@ -70,7 +73,20 @@ export default {
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				xl: 'calc(var(--radius) + 4px)',
+				'2xl': 'calc(var(--radius) + 8px)'
+			},
+			boxShadow: {
+				soft: '0 4px 12px hsl(150 25% 15% / 0.06), 0 1px 3px hsl(150 25% 15% / 0.04)',
+				elevated: '0 12px 32px hsl(150 25% 15% / 0.08), 0 2px 6px hsl(150 25% 15% / 0.04)',
+				glow: '0 8px 24px hsl(142 71% 38% / 0.25)',
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-sky': 'var(--gradient-sky)',
+				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-sun': 'var(--gradient-sun)',
 			},
 			keyframes: {
 				'accordion-down': {

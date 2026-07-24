@@ -1,0 +1,17 @@
+{
+  "name": "FarmWise AI",
+  "short_name": "FarmWise",
+  "description": "Smart farming assistant for Indian farmers — weather, soil health, disease scan, market prices and accounting.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8faf7",
+  "theme_color": "#16a34a",
+  "lang": "en",
+  "categories": ["agriculture", "productivity", "utilities"],
+  "icons": [
+    { "src": "/app-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/app-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

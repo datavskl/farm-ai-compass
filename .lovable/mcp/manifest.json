@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sdk_version": "0.24.0",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "agrismart-mcp",
+      "version": "0.1.0",
+      "title": "AgriSmart MCP"
+    },
+    "tools": [
+      {
+        "name": "list_features",
+        "title": "List AgriSmart features",
+        "description": "List the AgriSmart app's available features with a short description of each.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_feature",
+        "title": "Get AgriSmart feature",
+        "description": "Get details for a single AgriSmart feature by its id (e.g. 'weather', 'soil-health', 'disease-detection', 'accounting').",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Feature id, such as 'weather' or 'disease-detection'."
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

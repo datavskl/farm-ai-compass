@@ -1,0 +1,63 @@
+{
+  "app": { "name": "FarmWise AI", "tagline": "Smart farming, in your language" },
+  "nav": {
+    "home": "Home", "myFarm": "My Farm", "ai": "AI Assistant", "market": "Market", "profile": "Profile",
+    "dashboard": "Dashboard", "farms": "My Farms", "weather": "Weather", "soil": "Soil Health",
+    "cropPlanner": "Crop Planner", "disease": "Disease Scan", "prices": "Market Prices",
+    "tasks": "Farm Tasks", "accounting": "Accounting", "inventory": "Inventory",
+    "schemes": "Government Schemes", "community": "Community", "sensors": "IoT Sensors",
+    "notifications": "Notifications", "settings": "Settings"
+  },
+  "actions": {
+    "getStarted": "Get Started", "signIn": "Sign In", "signUp": "Sign Up", "continue": "Continue",
+    "next": "Next", "back": "Back", "skip": "Skip", "save": "Save", "cancel": "Cancel",
+    "tryDemo": "Try Demo Mode", "signOut": "Sign Out", "add": "Add", "edit": "Edit", "delete": "Delete"
+  },
+  "auth": {
+    "welcome": "Welcome to FarmWise",
+    "welcomeSub": "Sign in to manage your farms, crops and finances — all in one place.",
+    "phoneTab": "Phone OTP", "emailTab": "Email",
+    "phoneLabel": "Mobile number", "phonePh": "10-digit mobile number",
+    "sendOtp": "Send OTP", "otpLabel": "Enter OTP", "verify": "Verify & Continue",
+    "email": "Email", "password": "Password", "createAccount": "Create account",
+    "noAccount": "New to FarmWise?", "haveAccount": "Already have an account?"
+  },
+  "onboarding": {
+    "title": "Let's set up your farm",
+    "step": "Step {{n}} of {{total}}",
+    "name": "Your name", "language": "Preferred language",
+    "state": "State", "district": "District", "village": "Village",
+    "location": "Farm location", "useGps": "Use my GPS", "manual": "Enter manually",
+    "farmName": "Farm name", "size": "Farm size", "unit": "Unit",
+    "irrigation": "Irrigation type", "soil": "Soil type (if known)",
+    "currentCrops": "Current crops", "preferredCrops": "Preferred crops",
+    "finish": "Finish setup"
+  },
+  "home": {
+    "greeting": "Namaste, {{name}}",
+    "todaysWeather": "Today's Weather", "criticalAlerts": "Critical Alerts",
+    "quickActions": "Quick Actions", "yourCrops": "Your Crops",
+    "todaysTasks": "Today's Tasks", "soilSnapshot": "Soil Snapshot",
+    "marketSnapshot": "Market Snapshot", "yieldProfit": "Expected Yield & Profit",
+    "schemes": "Recommended Schemes", "aiRecs": "Recent AI Recommendations",
+    "lastSync": "Last synced {{time}}"
+  },
+  "quick": {
+    "scanDisease": "Scan Disease", "addSoil": "Add Soil Test", "askAi": "Ask AI",
+    "checkPrices": "Check Prices", "addExpense": "Add Expense", "addTask": "Add Task"
+  },
+  "common": {
+    "comingSoon": "Coming soon",
+    "demo": "Demo",
+    "online": "Online", "offline": "You're offline — changes will sync when back online.",
+    "updateAvailable": "A new version is ready.", "reload": "Reload",
+    "install": "Install app", "installHint": "Add FarmWise to your home screen for quick access.",
+    "loading": "Loading…", "empty": "Nothing here yet.", "retry": "Retry",
+    "errorTitle": "Something went wrong"
+  },
+  "settings": {
+    "title": "Settings", "language": "Language", "textSize": "Text size",
+    "notifications": "Notifications", "privacy": "Privacy", "help": "Help & Support",
+    "textSm": "Small", "textMd": "Default", "textLg": "Large", "textXl": "Extra large"
+  }
+}

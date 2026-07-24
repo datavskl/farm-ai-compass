@@ -1,0 +1,62 @@
+{
+  "app": { "name": "फार्मवाइज़ AI", "tagline": "स्मार्ट खेती, आपकी भाषा में" },
+  "nav": {
+    "home": "होम", "myFarm": "मेरा खेत", "ai": "AI सहायक", "market": "बाज़ार", "profile": "प्रोफ़ाइल",
+    "dashboard": "डैशबोर्ड", "farms": "मेरे खेत", "weather": "मौसम", "soil": "मिट्टी स्वास्थ्य",
+    "cropPlanner": "फ़सल योजना", "disease": "रोग स्कैन", "prices": "बाज़ार भाव",
+    "tasks": "खेत कार्य", "accounting": "लेखा-जोखा", "inventory": "इन्वेंट्री",
+    "schemes": "सरकारी योजनाएँ", "community": "समुदाय", "sensors": "IoT सेंसर",
+    "notifications": "सूचनाएँ", "settings": "सेटिंग्स"
+  },
+  "actions": {
+    "getStarted": "शुरू करें", "signIn": "साइन इन", "signUp": "साइन अप", "continue": "जारी रखें",
+    "next": "आगे", "back": "पीछे", "skip": "छोड़ें", "save": "सहेजें", "cancel": "रद्द करें",
+    "tryDemo": "डेमो आज़माएँ", "signOut": "साइन आउट", "add": "जोड़ें", "edit": "संपादित करें", "delete": "हटाएँ"
+  },
+  "auth": {
+    "welcome": "फार्मवाइज़ में स्वागत है",
+    "welcomeSub": "अपने खेत, फ़सल और वित्त एक ही जगह प्रबंधित करने के लिए साइन इन करें।",
+    "phoneTab": "फ़ोन OTP", "emailTab": "ईमेल",
+    "phoneLabel": "मोबाइल नंबर", "phonePh": "10 अंकों का मोबाइल नंबर",
+    "sendOtp": "OTP भेजें", "otpLabel": "OTP दर्ज करें", "verify": "सत्यापित करें",
+    "email": "ईमेल", "password": "पासवर्ड", "createAccount": "खाता बनाएँ",
+    "noAccount": "नए उपयोगकर्ता?", "haveAccount": "पहले से खाता है?"
+  },
+  "onboarding": {
+    "title": "आइए आपका खेत सेट करें",
+    "step": "चरण {{n}} / {{total}}",
+    "name": "आपका नाम", "language": "पसंदीदा भाषा",
+    "state": "राज्य", "district": "ज़िला", "village": "गाँव",
+    "location": "खेत का स्थान", "useGps": "GPS का उपयोग करें", "manual": "मैन्युअली दर्ज करें",
+    "farmName": "खेत का नाम", "size": "खेत का आकार", "unit": "इकाई",
+    "irrigation": "सिंचाई का प्रकार", "soil": "मिट्टी का प्रकार (यदि ज्ञात हो)",
+    "currentCrops": "वर्तमान फ़सलें", "preferredCrops": "पसंदीदा फ़सलें",
+    "finish": "सेटअप पूरा करें"
+  },
+  "home": {
+    "greeting": "नमस्ते, {{name}}",
+    "todaysWeather": "आज का मौसम", "criticalAlerts": "महत्वपूर्ण अलर्ट",
+    "quickActions": "त्वरित कार्य", "yourCrops": "आपकी फ़सलें",
+    "todaysTasks": "आज के कार्य", "soilSnapshot": "मिट्टी सारांश",
+    "marketSnapshot": "बाज़ार सारांश", "yieldProfit": "अनुमानित उपज व लाभ",
+    "schemes": "अनुशंसित योजनाएँ", "aiRecs": "हाल की AI सिफ़ारिशें",
+    "lastSync": "अंतिम सिंक {{time}}"
+  },
+  "quick": {
+    "scanDisease": "रोग स्कैन", "addSoil": "मिट्टी परीक्षण जोड़ें", "askAi": "AI से पूछें",
+    "checkPrices": "भाव देखें", "addExpense": "खर्च जोड़ें", "addTask": "कार्य जोड़ें"
+  },
+  "common": {
+    "comingSoon": "जल्द आ रहा है", "demo": "डेमो",
+    "online": "ऑनलाइन", "offline": "आप ऑफ़लाइन हैं — कनेक्ट होने पर बदलाव सिंक होंगे।",
+    "updateAvailable": "नया संस्करण तैयार है।", "reload": "पुनः लोड करें",
+    "install": "ऐप इंस्टॉल करें", "installHint": "त्वरित पहुँच के लिए फार्मवाइज़ को होम स्क्रीन पर जोड़ें।",
+    "loading": "लोड हो रहा है…", "empty": "अभी यहाँ कुछ नहीं है।", "retry": "पुनः प्रयास",
+    "errorTitle": "कुछ गड़बड़ हो गई"
+  },
+  "settings": {
+    "title": "सेटिंग्स", "language": "भाषा", "textSize": "टेक्स्ट का आकार",
+    "notifications": "सूचनाएँ", "privacy": "गोपनीयता", "help": "सहायता",
+    "textSm": "छोटा", "textMd": "सामान्य", "textLg": "बड़ा", "textXl": "बहुत बड़ा"
+  }
+}

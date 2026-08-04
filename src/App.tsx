@@ -26,6 +26,7 @@ import Notifications from "./pages/app/Notifications";
 import Settings from "./pages/app/Settings";
 import Profile from "./pages/app/Profile";
 import NotFound from "./pages/NotFound";
+import OAuthConsent from "./pages/OAuthConsent";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/" element={<Landing />} />
             <Route path="/login" element={<Login />} />
             <Route path="/onboarding" element={<Onboarding />} />
+            <Route path="/.lovable/oauth/consent" element={<OAuthConsent />} />
             <Route path="/app" element={<AppShell />}>
               <Route index element={<Home />} />
               <Route path="weather" element={<Weather />} />

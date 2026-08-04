@@ -2,7 +2,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import './i18n'
-import { registerPwa } from './pwa/register'
+import { registerPWA } from './pwa/register'
 
 createRoot(document.getElementById("root")!).render(<App />);
-registerPwa();
+registerPWA();

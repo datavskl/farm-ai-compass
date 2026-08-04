@@ -3,7 +3,7 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp } from "npm:@lovable.dev/mcp-js@0.24.0";
+import { auth, defineMcp } from "npm:@lovable.dev/mcp-js@0.24.0";
 
 // src/lib/mcp/tools/list-features.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.24.0";
@@ -54,11 +54,16 @@ var get_feature_default = defineTool2({
 });
 
 // src/lib/mcp/index.ts
+var projectRef = "dhgrinicwkwkbecqllqj";
 var mcp_default = defineMcp({
   name: "agrismart-mcp",
   title: "AgriSmart MCP",
   version: "0.1.0",
-  instructions: "Public read-only tools describing the AgriSmart agricultural management app. Use `list_features` to enumerate available capabilities and `get_feature` to fetch details for a specific one.",
+  instructions: "Read-only tools describing the AgriSmart agricultural management app. Use `list_features` to enumerate available capabilities and `get_feature` to fetch details for a specific one.",
+  auth: auth.oauth.issuer({
+    issuer: `https://${projectRef}.supabase.co/auth/v1`,
+    acceptedAudiences: "authenticated"
+  }),
   tools: [list_features_default, get_feature_default]
 });
 
